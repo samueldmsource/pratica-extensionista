@@ -33,8 +33,6 @@ class Activity(Base):
     local = Column(String)
     recorrencia = Column(JSON)
 
-# Descomente a linha abaixo apenas uma vez para resetar o banco se não conseguir deletar o arquivo
-# Base.metadata.drop_all(bind=engine)
 # Cria as tabelas no banco de dados
 Base.metadata.create_all(bind=engine)
 
